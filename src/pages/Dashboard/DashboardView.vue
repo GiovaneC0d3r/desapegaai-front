@@ -48,7 +48,7 @@
                 <ul class="space-y-1 px-2">
                     <li v-for="(item, index) in menuItems" :key="index">
                         <!-- Item sem children -->
-                        <router-link v-if="!item.children || item.children.length === 0" :to="item.href"
+                        <router-link v-if="!item.children || item.children.length === 0" :to="item.href as string"
                             class="flex items-center px-3 py-3 rounded-lg text-[#2D2D2D] hover:bg-[#F4F4F4] hover:text-[#247BA0] transition-colors group"
                             :class="{
                                 'bg-[#247BA0] text-white hover:bg-[#1e6a8c] hover:text-white': $route.path === item.href
