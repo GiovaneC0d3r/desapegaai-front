@@ -190,6 +190,7 @@
                     <!-- Botão Visualizar -->
                     <button 
                       @click.stop="openPreview(index)"
+                      type="button"
                       class="bg-white bg-opacity-90 text-gray-800 rounded-full p-2 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-110 hover:bg-white"
                       title="Visualizar"
                     >
@@ -202,6 +203,7 @@
                     <!-- Botão Remover -->
                     <button 
                       @click.stop="removeFile(index)"
+                      type="button"
                       class="bg-white bg-opacity-90 text-red-600 rounded-full p-2 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-110 hover:bg-white"
                       title="Remover"
                     >
